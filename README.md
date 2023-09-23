@@ -1,5 +1,7 @@
 # RustAxumAPI
 
+<img src="./assets/rust.png" width="100%">
+
 ### 0. Enter folder api
 ```sh
 cd api
