@@ -1,0 +1,44 @@
+###
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/health
+
+
+
+### CREATE TODO
+POST http://localhost:3000/todo
+Content-Type: application/json
+
+{
+    "title": "Computador Mackintosh1",
+    "content": "Criar um Mackintosh1",
+    "category": "Computador"
+}
+
+
+### LIST TODO
+GET http://localhost:3000/todos
+Content-Type: application/json
+
+
+### GET TODO
+GET http://localhost:3000/todo/2bf32396-4144-4216-909c-a59c2b99d69a
+Content-Type: application/json
+
+
+
+#### patch
+PATCH http://localhost:3000/todo/2bf32396-4144-4216-909c-a59c2b99d69a
+Content-Type: application/json
+
+{
+    "title": "Jogos - GE Force Now",
+    "content": "comprar GE Force jogar no macos",
+    "category": "Jogos PC"
+}
+
+
+### DELETE TODO
+DELETE http://localhost:3000/todo/ce9c031e-2b1e-4caf-aebb-d4c0e541475d
+Content-Type: application/json
