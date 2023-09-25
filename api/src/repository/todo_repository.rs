@@ -1,6 +1,6 @@
 use crate::{
-    model::TodoModel,
-    schema::{TodoListDTO, UpdateTodoDto},
+    model::todo_model::TodoModel,
+    schema::todo_schema::{TodoListDTO, UpdateTodoDto},
     AppState,
 };
 use sqlx::Error;

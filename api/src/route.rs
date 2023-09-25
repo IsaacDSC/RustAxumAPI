@@ -6,7 +6,7 @@ use axum::{
 };
 
 use crate::{
-    handler::{
+    handler::todo_handler::{
         create_todo_handler, delete_todo_handler, findall_todo_handler, get_by_id_todo_handler,
         health_checker_handler, update_todo_handler,
     },

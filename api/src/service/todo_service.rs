@@ -1,9 +1,9 @@
 use std::io::{Error, ErrorKind};
 
 use crate::{
-    model::TodoModel,
+    model::todo_model::TodoModel,
     repository::todo_repository,
-    schema::{TodoListDTO, UpdateTodoDto},
+    schema::todo_schema::{TodoListDTO, UpdateTodoDto},
 };
 
 pub struct TodoService {

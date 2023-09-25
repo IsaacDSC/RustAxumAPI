@@ -10,7 +10,7 @@ use serde_json::json;
 
 use crate::{
     repository::todo_repository::TodoRepository,
-    schema::{FilterOptions, TodoListDTO, UpdateTodoDto},
+    schema::todo_schema::{FilterOptions, TodoListDTO, UpdateTodoDto},
     service::todo_service::TodoService,
     AppState,
 };
