@@ -11,8 +11,8 @@ POST http://localhost:3000/todo
 Content-Type: application/json
 
 {
-    "title": "Computador Mackintosh1",
-    "content": "Criar um Mackintosh1",
+    "title": "Computador Mackintosh123",
+    "content": "Criar um Mackintosh123",
     "category": "Computador"
 }
 
@@ -22,23 +22,26 @@ GET http://localhost:3000/todos
 Content-Type: application/json
 
 
+### Define variable
+@id=33c8746d-ccb0-437b-a9e8-868b69c1fa47
+
 ### GET TODO
-GET http://localhost:3000/todo/2bf32396-4144-4216-909c-a59c2b99d69a
+GET http://localhost:3000/todo/{{id}}
 Content-Type: application/json
 
 
 
 #### patch
-PATCH http://localhost:3000/todo/2bf32396-4144-4216-909c-a59c2b99d69a
+PATCH http://localhost:3000/todo/{{id}}
 Content-Type: application/json
 
 {
-    "title": "Jogos - GE Force Now",
+    "title": "Jogos - GE Force Now22",
     "content": "comprar GE Force jogar no macos",
     "category": "Jogos PC"
 }
 
 
 ### DELETE TODO
-DELETE http://localhost:3000/todo/ce9c031e-2b1e-4caf-aebb-d4c0e541475d
+DELETE http://localhost:3000/todo/{{id}}
 Content-Type: application/json
